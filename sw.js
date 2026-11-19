@@ -1,5 +1,5 @@
 /* Service Worker · Cache-First. La versión cambia sola con cada build (hash del index.html cifrado). */
-const C = 'ec135-4379e38ac1c3';
+const C = 'ec135-9212a7b96f0f';
 const F = ['./index.html', './manifest.json'];
 /* Copia limpia: algunos hostings redirigen /index.html a / y una respuesta «redirected» no vale para navegar */
 const clean = async r => r.redirected ? new Response(await r.blob(), { status: r.status, statusText: r.statusText, headers: r.headers }) : r;
